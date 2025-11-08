@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChakraProvider, cookieStorageManager, localStorageManager } from '@chakra-ui/react'
+import { ChakraProvider, cookieStorageManagerSSR, localStorageManager } from '@chakra-ui/react'
 import theme from '@/theme/theme'
 
 interface CharkaProps {
@@ -9,9 +9,8 @@ interface CharkaProps {
 
 export default function Charka({ cookies, children }: CharkaProps) {
     const colorModeManager =
-        typeof cookies === 'string' ? cookieStorageManager(cookies) : localStorageManager
+        typeof cookies === 'string' ? cookieStorageManagerSSR(cookies) : localStorageManager
 
-    console.log('colorModeManager', colorModeManager)
     return (
         <ChakraProvider theme={theme} colorModeManager={colorModeManager}>
             {children}

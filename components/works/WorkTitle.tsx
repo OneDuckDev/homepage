@@ -1,16 +1,16 @@
 import React, { HTMLProps } from 'react'
 import NextLink from 'next/link'
-import { Heading, Box, Image, Link, Badge } from '@chakra-ui/react'
+import { Heading, Box, Link } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
 interface WorkTitleProps {
-    children: HTMLProps<string>
+    children: React.ReactNode
 }
 
 export default function WorkTitle({ children }: WorkTitleProps) {
     return (
         <Box>
-            <NextLink href="/works">
+            <NextLink href="/works" passHref>
                 <Link>Works</Link>
             </NextLink>
             <span>

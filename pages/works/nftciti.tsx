@@ -12,7 +12,9 @@ export default function NFTCiti() {
         <MainArticle title="NFT Citi">
             <Container>
                 <WorkTitle>
-                    NFTCiti <Badge>07/2022-</Badge>
+                    <>
+                        NFTCiti <Badge>07/2022-</Badge>
+                    </>
                 </WorkTitle>
 
                 <WorkParagraph>
@@ -23,8 +25,8 @@ export default function NFTCiti() {
                 <List ml={4} my={4}>
                     <ListItem>
                         <WorkMetadata>Website</WorkMetadata>
-                        <Link href="http://3.136.71.236/" isExternal>
-                            http://3.136.71.236/ <ExternalLinkIcon mx="2px" />
+                        <Link href="https://makecolor.io" isExternal>
+                            https://makecolor.io <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
                     <ListItem>

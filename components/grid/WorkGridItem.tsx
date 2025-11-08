@@ -21,10 +21,10 @@ export const GriGridItemStyle = () => (
     />
 )
 
-const WorkGridItem = ({ children, id, title, thumbnail }: WorkGridItemProps) => {
+const WorkGridItem = ({ children, id, title = '', thumbnail }: WorkGridItemProps) => {
     return (
         <Box w="100%" textAlign="center">
-            <NextLink href={`/works/${id}`} scroll={false}>
+            <NextLink href={`/works/${id}`} scroll={false} passHref>
                 <LinkBox cursor="pointer">
                     <Box pos="relative" height="130px" width="100%" overflow="hidden">
                         <Image

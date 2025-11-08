@@ -12,6 +12,7 @@ export const OneDuckSpinner = () => (
     />
 )
 
+OneDuckSpinner.displayName = 'OneDuckSpinner'
 export const OneDuckContainer = forwardRef<HTMLDivElement, any>(({ children }, ref: any) => (
     <Box
         ref={ref}
@@ -26,6 +27,7 @@ export const OneDuckContainer = forwardRef<HTMLDivElement, any>(({ children }, r
         {children}
     </Box>
 ))
+OneDuckContainer.displayName = 'OneDuckContainer'
 
 const OneDuckLoader = () => {
     return (

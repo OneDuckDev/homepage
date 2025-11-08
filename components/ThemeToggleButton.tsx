@@ -9,7 +9,7 @@ export default function ThemeToggleButton() {
     const { toggleColorMode } = useColorMode()
 
     return (
-        <AnimatePresence exitBeforeEnter initial={false}>
+        <AnimatePresence mode="wait" initial={false}>
             <MotionBox
                 style={{ display: 'inline-block' }}
                 key={useColorModeValue('light', 'dark')}
